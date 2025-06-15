@@ -4,6 +4,7 @@ import matter from "gray-matter"
 import { join } from "path"
 
 const postsDirectory = join(process.cwd(), "_posts")
+const bioMdxPath = join(process.cwd(), "/_bio/bio.mdx")
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
@@ -16,6 +17,12 @@ export function getPostBySlug(slug: string) {
   const { data, content } = matter(fileContents)
 
   return { ...data, slug: realSlug, content } as Post
+}
+
+export function getBioSlug() {
+  const fileContents = fs.readFileSync(bioMdxPath, "utf8")
+  const { data, content } = matter(fileContents)
+  return { ...data, slug: "/bio", content } as Post
 }
 
 export function getAllPosts(): Post[] {

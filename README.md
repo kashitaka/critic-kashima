@@ -1,1 +1,1 @@
-# kashitaka.dev
+# Critic-kashima

@@ -27,7 +27,7 @@ export default async function Post(props: Params) {
       <CoverImage title={post.title} src={post.coverImage} />
       <Container>
         <article className="max-w-2xl mx-auto mb-32">
-          <PostHeader title={post.title} date={post.date} profileShortDescription={post.author.shortDescription} />
+          <PostHeader title={post.title} date={post.date} />
           <PostBody content={content} />
           <SectionSeparator />
           <Profile />

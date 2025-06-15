@@ -8,7 +8,7 @@
     "build": "next build && yarn prepare-docs && yarn gen-sitemap",
     "start": "next start",
     "fmt": "prettier --write src",
-    "prepare-docs": "touch docs/.nojekyll && printf 'kashitaka.dev' > docs/CNAME",
+    "prepare-docs": "touch docs/.nojekyll && printf 'critic-kashima.art' > docs/CNAME",
     "gen-sitemap": "next-sitemap"
   },
   "dependencies": {

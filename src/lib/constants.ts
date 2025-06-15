@@ -1,20 +1,20 @@
-export const SITE_TITLE = "The Kashitaka Blog"
-export const SITE_ROOT_PATH = "https://kashitaka.dev"
-export const SITE_DESCRIPTION = "アメリカの大学院でCSを学ぶあれこれを発信していきたいエンジニアのブログ"
+export const SITE_TITLE = "美術評論家かしまかずおの活動"
+export const SITE_ROOT_PATH = "https://critic-kashima.art"
+export const SITE_DESCRIPTION = "美術評論家かしまかずおのウェブサイト。最近関わらせていただいた仕事を紹介しています。"
 export const SITE_COVER_IMAGE = "/assets/site_cover.jpg"
 export const SITE_INQUIRY_URL = "https://forms.gle/3b7d8Z1a5c9f2g4i6"
 export const CMS_NAME = "Markdown"
-export const HOME_OG_IMAGE_URL = "/assets/top_og.png"
+export const HOME_OG_IMAGE_URL = "/assets/top_og.jpg"
 export const YEAR = "2025"
 export const PROFILE = {
-  name: "kashitaka",
-  description:
-    "ソフトウェアエンジニア。2025年アメリカのGeorgia Techの修士課程でCSを学ぶ予定。\n \
-  ブログでアメリカの大学院の受験のあれこれを書いていきたい。\n \
-  経歴：埼玉育ち→東工大→新聞社→リクルート→ベンチャーCTO→(株)サイカ→CSを学びに渡米",
-  image: "/assets/blog/profile/IJy6aSXU_400x400.jpg",
-  githubUrl: "https://github.com/kashitaka",
-  xUrl: "https://x.com/kashitaka1118",
-  linkedinUrl: "https://www.linkedin.com/in/kashitaka/",
-  ethereumUrl: "https://app.ens.domains/kashitaka.eth",
+  name: "かしまかずお",
+  description: 
+    "年間約40件の美術評論執筆をはじめ、絵画公募団体の外部招聘審査委員や作品講評会に出講など、執筆外活動も旺盛に行う。\n \
+     \n \
+    略歴 \n \
+    ・1951年 鹿児島県出身 \n \
+    ・1975年 中央大学文学部仏文科卒  \n \
+    ・新宿区中央図書館長、新宿文化センター館長を歴任 \n \
+    ",
+  image: "/assets/blog/profile/icon.jpg",
 }

@@ -31,11 +31,18 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center justify-between h-16 px-4">
-        <h2 className="text-xl md:text-2xl font-bold tracking-tight leading-tight mt-0 flex items-center h-16 px-4">
-          <Link href="/" className="hover:underline">
-            {SITE_TITLE}
-          </Link>
-        </h2>
+        <div className="flex items-center space-x-6">
+          <h2 className="text-xl md:text-2xl font-bold tracking-tight leading-tight mt-0 flex items-center h-16 px-4">
+            <Link href="/" className="hover:underline">
+              {SITE_TITLE}
+            </Link>
+          </h2>
+          <nav className="flex gap-6 text-sm font-medium">
+            <Link href="/biography" className="hover:underline text-neutral-700 dark:text-neutral-200">
+              About
+            </Link>
+          </nav>
+        </div>
         <div>
           <ThemeSwitcher />
         </div>
