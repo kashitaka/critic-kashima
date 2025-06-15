@@ -26,7 +26,7 @@ export default async function BioPage() {
           <PostTitle>{post.title}</PostTitle>
           <PostBody content={content} />
           <div className="mt-16">
-            <InquiryButton/>
+            <InquiryButton />
           </div>
         </article>
       </Container>

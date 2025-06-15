@@ -10,15 +10,17 @@ type Props = {
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
-    <Image
-      src={src}
-      alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm mx-auto", {
-        "hover:shadow-lg transition-shadow duration-200": slug,
-      })}
-      width={1280}
-      height={630}
-    />
+    <div className="relative w-full lg:max-h-screen aspect-[1/1] lg:aspect-[3/2]">
+      <Image
+        src={src}
+        alt={`Cover Image for ${title}`}
+        className={cn("shadow-sm mx-auto object-contain", "dark:shadow-white/10", {
+          "hover:shadow-lg transition-shadow duration-200": slug,
+        })}
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      />
+    </div>
   )
   return (
     // <div className="mx-auto sm:px-0 md:px-8 sm:mx-0 xl:px-16 w-full flex justify-center pt">
