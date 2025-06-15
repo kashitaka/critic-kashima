@@ -10,6 +10,7 @@ import { PostHeader } from "@/app/_components/post-header"
 import CoverImage from "@/app/_components/cover-image"
 import { SectionSeparator } from "@/app/_components/section-separator"
 import Profile from "@/app/_components/profile"
+import { InquiryButton } from "@/app/_components/inquiry"
 
 export default async function Post(props: Params) {
   const params = await props.params
@@ -31,6 +32,7 @@ export default async function Post(props: Params) {
           <PostBody content={content} />
           <SectionSeparator />
           <Profile />
+          <InquiryButton />
         </article>
       </Container>
     </main>

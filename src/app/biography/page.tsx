@@ -7,6 +7,7 @@ import Container from "@/app/_components/container"
 import Header from "@/app/_components/header"
 import { PostBody } from "@/app/_components/post-body"
 import { PostTitle } from "@/app/_components/post-title"
+import { InquiryButton } from "../_components/inquiry"
 
 export default async function BioPage() {
   const post = getBioSlug()
@@ -24,6 +25,9 @@ export default async function BioPage() {
         <article className="max-w-2xl mx-auto mb-32">
           <PostTitle>{post.title}</PostTitle>
           <PostBody content={content} />
+          <div className="mt-16">
+            <InquiryButton/>
+          </div>
         </article>
       </Container>
     </main>

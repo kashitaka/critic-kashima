@@ -1,5 +1,4 @@
 import { PROFILE } from "@/lib/constants"
-import { FaGithub, FaXTwitter, FaLinkedin, FaEthereum } from "react-icons/fa6"
 
 type Props = {
   shortDescription?: string // Optional, used when concise is true. less than 20 Zenkaku chars recommended
