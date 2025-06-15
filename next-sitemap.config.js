@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://kashitaka.dev",
+  siteUrl: "https://critic-kashima.art",
   generateRobotsTxt: true,
   outDir: './docs',
 }
