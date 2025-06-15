@@ -1,0 +1,171 @@
+.markdown {
+  @apply text-base md:text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h1 {
+  @apply text-2xl md:text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h2 {
+  @apply text-xl md:text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-lg md:text-xl mt-6 mb-2 font-semibold leading-snug;
+}
+
+.markdown h4 {
+  @apply text-base md:text-lg mt-4 mb-2 font-semibold leading-snug;
+}
+
+.markdown li {
+  margin-bottom: 0.3em;
+}
+
+.markdown a {
+  color: #2563eb; /* Tailwindのblue-600 */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+/* dark-mode */
+:global(.dark) .markdown a {
+  color: #60a5fa; /* Tailwindのblue-400 */
+}
+:global(.dark) .markdown a:hover,
+:global(.dark) .markdown a:focus {
+  color: #93c5fd; /* Tailwindのblue-300 */
+}
+
+.markdown a:hover,
+.markdown a:focus {
+  color: #1d4ed8; /* Tailwindのblue-700 */
+  text-decoration-thickness: 2px;
+}
+
+.markdown del {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  opacity: 0.8;
+}
+
+.markdown ul {
+  list-style-type: disc;
+}
+
+.markdown ol {
+  list-style-type: decimal;
+}
+
+.markdown ul,
+.markdown ol {
+  list-style-position: outside;
+  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.markdown li {
+  margin-bottom: 0.3em;
+}
+
+/* ネストされたul/olの上下マージンをなくす */
+.markdown li > ul,
+.markdown li > ol {
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+/* ネストされたliも等間隔に */
+.markdown ul ul,
+.markdown ul ol,
+.markdown ol ul,
+.markdown ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1.5em;
+}
+
+.markdown ul li,
+.markdown ol li {
+  margin-bottom: 0.3em;
+}
+
+/* table */
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  font-size: 0.8em;
+}
+.markdown th,
+.markdown td {
+  border: 1px solid #e5e7eb; /* Tailwindのgray-200 */
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+.markdown th {
+  background: #f3f4f6; /* Tailwindのgray-100 */
+  font-weight: 600;
+}
+
+.markdown tr:nth-child(even) td {
+  background: #f9fafb; /* Tailwindのgray-50 */
+}
+
+/* dark-mode */
+:global(.dark) .markdown table {
+  color: #e5e7eb; /* gray-200 */
+}
+:global(.dark) .markdown th,
+:global(.dark) .markdown td {
+  border-color: #334155; /* slate-700 */
+}
+:global(.dark) .markdown th {
+  background: #1e293b; /* slate-800 */
+}
+:global(.dark) .markdown tr:nth-child(even) td {
+  background: #0f172a; /* slate-900 */
+}
+
+.markdown blockquote {
+  border-left: 4px solid #a3a3a3; /* gray-400 */
+  background: #f3f4f6;            /* gray-100 */
+  color: #52525b;                 /* zinc-600 */
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  border-radius: 0.5em;
+  font-style: italic;
+}
+
+:global(.dark) .markdown blockquote {
+  border-left: 4px solid #64748b; /* slate-400 */
+  background: #1e293b;            /* slate-800 */
+  color: #cbd5e1;                 /* slate-300 */
+}
+
+.markdown code {
+  background: #f4f4f5;        /* zinc-100 */
+  color: #d97706;             /* amber-600: 目立つオレンジ系 */
+  padding: 0.2em 0.4em;
+  border-radius: 0.3em;
+  font-size: 0.95em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
+  /* 文章中で折り返しやすく */
+  word-break: break-word;
+}
+
+/* ダークモード */
+:global(.dark) .markdown code {
+  background: #27272a;        /* zinc-800 */
+  color: #d19e1d;             /* amber-400: 明るいオレンジ */
+}

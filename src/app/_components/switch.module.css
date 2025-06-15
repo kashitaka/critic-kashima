@@ -1,0 +1,39 @@
+.switch {
+  right: 20px;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  cursor: pointer;
+  --size: 30px;
+  height: var(--size);
+  width: var(--size);
+  transition: all 0.3s ease-in-out 0s !important;
+  border: 1px solid #a9acb4;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+  outline: none;
+  padding: 0;
+}
+
+[data-mode="light"] .switch {
+  background: transparent;
+}
+
+[data-mode="dark"] .switch {
+  background: transparent;
+}
+
+@keyframes n {
+  40% {
+    transform: rotate(-15deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
